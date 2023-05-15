@@ -5,7 +5,7 @@ import { BsSearch } from "react-icons/bs";
 function Header() {
   return (
     <>
-      <header className="header-top-strip">
+      <header className="header-top-strip py-3">
         <div className="container-xxl">
           <div className="row">
             <div className="col-6">
@@ -29,7 +29,7 @@ function Header() {
           <div className="row align-items-center">
             <div className="col-2">
               <h2>
-                <Link className="text-white">DevCorner.</Link>
+                <Link className="text-white">WANTED</Link>
               </h2>
             </div>
             <div className="col-5">
@@ -49,7 +49,7 @@ function Header() {
             <div className="col-5">
               <div className="header-upper-links d-flex align-items-center justify-content-between">
                 <div>
-                  <Link>
+                  <Link className="d-flex align-items-center gap-10 text-white">
                     <img src="/images/compare.svg" alt=""></img>
                     <p>
                       Compare <br /> Products
@@ -57,7 +57,7 @@ function Header() {
                   </Link>
                 </div>
                 <div>
-                  <Link>
+                  <Link className="d-flex align-items-center gap-10 text-white">
                     <img src="/images/wishlist.svg" alt="wishlist"></img>
                     <p>
                       Favourite <br /> Wishlist
@@ -65,7 +65,7 @@ function Header() {
                   </Link>
                 </div>
                 <div>
-                  <Link>
+                  <Link className="d-flex align-items-center gap-10 text-white">
                     <img src="/images/user.svg" alt="user"></img>
                     <p>
                       Login <br /> My Account
@@ -73,12 +73,75 @@ function Header() {
                   </Link>
                 </div>
                 <div>
-                  <Link>
+                  <Link className="d-flex align-items-center gap-10 text-white">
                     <img src="/images/cart.svg" alt="cart"></img>
-                    <div className="d-flex flex-column">
+                    <div className="d-flex flex-column gap-10">
                       <span className="badge bg-white text-dark">0</span>
+                      <p className="mb-0">$ 500</p>
                     </div>
                   </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <header className="header-bottom py-3">
+        <div className="container-xxl">
+          <div className="row">
+            <div className="col-12">
+              <div className="menu-bottom d-flex align-items-center gap-30">
+                <div>
+                  <div className="dropdown">
+                    <button
+                      className="btn btn-secondary dropdown-toggle bg-transparent border-0 gap-15 d-flex align-items-center"
+                      type="button"
+                      id="dropdownMenuButton1"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <img src="images/menu.svg"></img>
+                      <span className="me-5 d-inline-blick">
+                        Shop Categories
+                      </span>
+                    </button>
+                    <ul
+                      className="dropdown-menu"
+                      aria-labelledby="dropdownMenuButton1"
+                    >
+                      <li>
+                        <Link to="" className="dropdown-item text-white">
+                          Action
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="" className="dropdown-item text-white">
+                          Another action
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="" className="dropdown-item text-white">
+                          Something else here
+                        </Link>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="menu-links">
+                  <div className="d-flex align-item-center gap-15">
+                    <NavLink className="text-white" to="/">
+                      Home
+                    </NavLink>
+                    <NavLink className="text-white" to="/">
+                      Our Store
+                    </NavLink>
+                    <NavLink className="text-white" to="/">
+                      Blogs
+                    </NavLink>
+                    <NavLink className="text-white" to="/contact">
+                      Contact
+                    </NavLink>
+                  </div>
                 </div>
               </div>
             </div>
