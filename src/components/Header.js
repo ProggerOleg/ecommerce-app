@@ -100,7 +100,7 @@ function Header() {
                       data-bs-toggle="dropdown"
                       aria-expanded="false"
                     >
-                      <img src="images/menu.svg"></img>
+                      <img src="images/menu.svg" alt="menu"></img>
                       <span className="me-5 d-inline-blick">
                         Shop Categories
                       </span>
