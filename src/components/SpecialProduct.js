@@ -11,7 +11,7 @@ const SpecialProduct = () => {
             <img src="images/watch.jpg" className="img-fluid" alt="watch" />
           </div>
           <div className="special-product-content">
-            <h5 className="brand"></h5>
+            <h5 className="brand">Smart Phone</h5>
             <h6 className="title">
               Samsung Galaxy Note10+ Modile Phone; Sim...
             </h6>
