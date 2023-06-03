@@ -51,7 +51,10 @@ function Header() {
             <div className="col-5">
               <div className="header-upper-links d-flex align-items-center justify-content-between">
                 <div>
-                  <Link className="d-flex align-items-center gap-10 text-white">
+                  <Link
+                    className="d-flex align-items-center gap-10 text-white"
+                    to="/compare-product"
+                  >
                     <img src="/images/compare.svg" alt=""></img>
                     <p>
                       Compare <br /> Products
@@ -59,7 +62,10 @@ function Header() {
                   </Link>
                 </div>
                 <div>
-                  <Link className="d-flex align-items-center gap-10 text-white">
+                  <Link
+                    className="d-flex align-items-center gap-10 text-white"
+                    to="/wishlist"
+                  >
                     <img src="/images/wishlist.svg" alt="wishlist"></img>
                     <p>
                       Favourite <br /> Wishlist
@@ -67,7 +73,10 @@ function Header() {
                   </Link>
                 </div>
                 <div>
-                  <Link className="d-flex align-items-center gap-10 text-white">
+                  <Link
+                    className="d-flex align-items-center gap-10 text-white"
+                    to="/login"
+                  >
                     <img src="/images/user.svg" alt="user"></img>
                     <p>
                       Login <br /> My Account
@@ -75,7 +84,10 @@ function Header() {
                   </Link>
                 </div>
                 <div>
-                  <Link className="d-flex align-items-center gap-10 text-white">
+                  <Link
+                    className="d-flex align-items-center gap-10 text-white"
+                    to="cart"
+                  >
                     <img src="/images/cart.svg" alt="cart"></img>
                     <div className="d-flex flex-column gap-10">
                       <span className="badge bg-white text-dark">0</span>
@@ -137,7 +149,7 @@ function Header() {
                     <NavLink className="text-white" to="/store">
                       Our Store
                     </NavLink>
-                    <NavLink className="text-white" to="/">
+                    <NavLink className="text-white" to="/blog">
                       Blogs
                     </NavLink>
                     <NavLink className="text-white" to="/contact">
