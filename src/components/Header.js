@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink, Link } from "react-router-dom";
 import { BsSearch } from "react-icons/bs";
+import menu from "../images/menu.svg";
 
 function Header() {
   return (
@@ -86,11 +87,17 @@ function Header() {
                 <div>
                   <Link
                     className="d-flex align-items-center gap-10 text-white"
-                    to="cart"
+                    to="/cart"
                   >
                     <img src="/images/cart.svg" alt="cart"></img>
-                    <div className="d-flex flex-column gap-10">
-                      <span className="badge bg-white text-dark">0</span>
+                    <div className="d-flex flex-column">
+                      <div
+                        className="d-flex align-items-center justify-content-between"
+                        style={{ width: "75px" }}
+                      >
+                        <div>Items:{"  "}</div>
+                        <span className="badge bg-white text-dark">0</span>
+                      </div>
                       <p className="mb-0">$ 500</p>
                     </div>
                   </Link>
@@ -114,7 +121,7 @@ function Header() {
                       data-bs-toggle="dropdown"
                       aria-expanded="false"
                     >
-                      <img src="images/menu.svg" alt="menu"></img>
+                      <img src={menu} alt="menu"></img>
                       <span className="me-5 d-inline-blick">
                         Shop Categories
                       </span>
