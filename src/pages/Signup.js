@@ -26,7 +26,7 @@ const Signup = () => {
                 <div>
                   <input
                     type="text"
-                    name="firstName"
+                    name="LastName"
                     placeholder="Last name"
                     className="form-control"
                   />
